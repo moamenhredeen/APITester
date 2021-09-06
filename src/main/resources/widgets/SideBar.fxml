@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="sideBar" styleClass="sideBar" stylesheets="@../Styles/Styles.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+
+    <TextField promptText="search for item" styleClass="sidebar_search">
+        <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+        </VBox.margin>
+    </TextField>
+
+    <Separator orientation="HORIZONTAL" />
+
+    <TreeView VBox.vgrow="ALWAYS" styleClass="sidebar_tree" fx:id="sidebar_tree" showRoot="false">
+        <TreeItem fx:id="sidebar_tree_root" expanded="true" value="projects">
+            <children>
+                <TreeItem value="Recent Requests">
+                    <children>
+                        <TreeItem value="request x" />
+                        <TreeItem value="request y" />
+                    </children>
+                </TreeItem>
+                <TreeItem value="Project x">
+                    <children>
+                        <TreeItem value="request x" />
+                        <TreeItem value="request y" />
+                    </children>
+                </TreeItem>
+            </children>
+        </TreeItem>
+    </TreeView>
+</VBox>

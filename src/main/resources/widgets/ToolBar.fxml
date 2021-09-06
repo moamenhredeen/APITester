@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+
+<ToolBar fx:controller="com.moamen.controllers.ToolBarController"
+         xmlns="http://javafx.com/javafx/11.0.2"
+         xmlns:fx="http://javafx.com/fxml/1">
+    <Button onAction="#save" styleClass="btnIcon" fx:id="save"/>
+    <Button onAction="#settings" styleClass="btnIcon" fx:id="settings"/>
+    <Button onAction="#customize" styleClass="btnIcon" fx:id="customize"/>
+    <Button onAction="#search" styleClass="btnIcon" fx:id="search"/>
+</ToolBar>

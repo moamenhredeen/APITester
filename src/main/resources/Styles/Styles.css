@@ -1,0 +1,295 @@
+/******************* global styles ************************/
+
+
+* {
+    -fx-font-family: "Cascadia Code PL";
+    -fx-dark: #222831;
+    -fx-gray-light: #F2F2F2;
+    -fx-blue-dark: #28527A;
+    -fx-blue-light: #8AC4D0;
+    -fx-yellow-dark: #F4D160;
+    -fx-yellow-light: #FBEEAC;
+    -fx-text-light: #FBFBFB;
+    -fx-text-dark: #222831;
+}
+
+/* customize default fx classes */
+.split-pane{
+    -fx-background-color: white;
+}
+
+.split-pane > .split-pane-divider {
+    -fx-padding: 0 2 0 2;
+}
+
+.split-pane:horizontal > .split-pane-divider,
+.split-pane:vertical > .split-pane-divider{
+    -fx-border-color: -fx-gray-light;
+    -fx-background-color: -fx-gray-light;
+    -fx-background-insets: 0;
+}
+
+.separator > .line{
+    -fx-border-style: none;
+    -fx-border-width: 0.02em;
+}
+
+.text-field{
+    -fx-background-color: -fx-gray-light;
+    -fx-padding: 10px;
+}
+
+.text-area{
+    -fx-background-color:none;
+}
+
+.text-area .content{
+    -fx-background-color: -fx-gray-light;
+}
+
+.text-area:focused{
+    -fx-background-color: -fx-gray-light, -fx-gray-light, -fx-gray-light;
+    -fx-border-color:none;
+}
+
+.tab-pane > .tab-header-area > .tab-header-background {
+    -fx-background-color: transparent;
+    -fx-effect: none;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab {
+    -fx-padding: 10 20;
+    -fx-background-color: -fx-gray-light;
+    -fx-background-insets: 0 ;
+    -fx-background-radius: 0 ;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:hover {
+    -fx-background-color: -fx-yellow-light;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected {
+    -fx-background-color: -fx-yellow-dark, -fx-yellow-dark;
+}
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-style:none;
+    -fx-border-width: 0;
+    -fx-border-color: none;
+}
+
+.tab-pane:top > .tab-header-area,
+.tab-pane:bottom > .tab-header-area,
+.tab-pane:left > .tab-header-area ,
+.tab-pane:right > .tab-header-area {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.button{
+    -fx-background-color: -fx-blue-dark;
+    -fx-text-fill: white;
+    -fx-padding: 10 20;
+}
+
+.button:hover,
+.button:focused{
+    -fx-cursor: hand;
+}
+
+.combo-box-base  {
+    -fx-background-color: -fx-blue-dark;
+    -fx-alignment: center;
+}
+
+.combo-box-base:hover,
+.combo-box-base:focused{
+    -fx-cursor: hand;
+}
+
+.combo-box-base > .list-cell{
+    -fx-text-fill: -fx-text-light;
+    -fx-alignment: center;
+}
+
+.combo-box-base > .arrow-button > .arrow{
+    -fx-shape: null;
+    -fx-padding: 0;
+}
+
+/* user defined classes */
+.btnIcon {
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 25 25;
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-content-display: center;
+}
+
+.btnIcon:hover {
+    -fx-scale-x: 1.1px;
+    -fx-scale-y: 1.1px;
+    -fx-animated: true;
+}
+
+.btnIcon:pressed {
+    -fx-scale-x: 1.1px;
+    -fx-scale-y: 1.1px;
+    -fx-animated: true;
+    -fx-background-color: rgba(255, 241, 0, 0.11);
+}
+/******************* MenuBar ************************/
+
+.menu-bar {
+    -fx-background-color: white;
+}
+
+
+.menu-bar > .container > .menu-button:hover,
+.menu-bar > .container > .menu-button:focused,
+.menu-bar > .container > .menu-button:showing {
+    -fx-background-color: -fx-yellow-dark;
+}
+
+.menu-bar > .container > .menu-button:hover > .label,
+.menu-bar > .container > .menu-button:focused > .label,
+.menu-bar > .container > .menu-button:showing > .label {
+    -fx-text-fill:-fx-dark;
+}
+
+
+.menu-item:focused,
+.menu-item:focused > .label{
+    -fx-background-color: -fx-yellow-light;
+    -fx-text-fill: -fx-dark;
+}
+
+
+/******************* ToolBar ************************/
+.tool-bar{
+    -fx-background-color: white;
+}
+
+#save {
+    -fx-background-image: url("../images/delete.png");
+}
+
+#save {
+    -fx-background-image: url("../images/save.png");
+}
+
+#customize {
+    -fx-background-image: url("../images/customize.png");
+}
+
+#settings {
+    -fx-background-image: url("../images/settings.png");
+}
+
+#search {
+    -fx-background-image: url("../images/search.png");
+}
+
+/******************* SideBar ************************/
+.sidebar_search {
+}
+
+.sidebar_tree{
+    -fx-background-color: none;
+    -fx-border-color: none;
+}
+
+.sidebar_tree:hover,
+.sidebar_tree:focused {
+    -fx-background-color: none;
+    -fx-border-color: none;
+}
+
+.sidebar_tree .tree-cell {
+    -fx-padding: 10px 5px;
+}
+
+.sidebar_tree .tree-cell:filled:selected:focused {
+    -fx-background-color: -fx-yellow-dark;
+    -fx-text-fill: -fx-dark;
+}
+
+.sidebar_tree .tree-cell:filled:selected:focused > .tree-disclosure-node > .arrow {
+    -fx-background-color: -fx-dark;
+}
+
+
+/******************* Main/Form ************************/
+.section-label-container{
+    -fx-background-color: #393E46;
+    -fx-padding: 4px;
+    -fx-alignment: center;
+    -fx-background-radius:5 5 0 0;
+}
+
+.section-label{
+    -fx-text-fill: white;
+}
+
+.requestForm {
+    -fx-spacing: 20px;
+    -fx-padding: 10px;
+    -fx-pref-height: 50px;
+}
+
+.requestDataForm {
+    -fx-padding: 10px;
+}
+
+.combobox-http-verbs{
+    -fx-pref-height: 45px;
+}
+
+.combobox-http-verbs > .arrow-button{
+    -fx-background-color: null;
+    -fx-padding: 0;
+}
+
+
+.text-field-url{
+    -fx-pref-height: 50px;
+}
+
+.headers {
+    -fx-padding: 0 10px;
+}
+
+.header {
+    -fx-alignment: center;
+    -fx-spacing: 10px;
+    -fx-padding: 10px 0 0 0 ;
+}
+
+.btnDeleteHeader {
+    -fx-background-image: url("../images/delete.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 25 25;
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+#btnAddRequestHeader {
+    -fx-background-image: url("../images/plus.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 25 25;
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.outputConsoleTextArea{
+    -fx-wrap-text: true;
+}
+
+
+.body {
+    -fx-spacing: 10px;
+    -fx-padding: 0 10px;
+}
+
+
+/******************* Main/Console ************************/

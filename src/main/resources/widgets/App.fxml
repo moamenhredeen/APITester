@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox  stylesheets="@../Styles/Styles.css"
+      xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+    <fx:include source="MenuBar.fxml"/>
+    <Separator/>
+    <fx:include source="ToolBar.fxml"/>
+    <SplitPane VBox.vgrow="ALWAYS" dividerPositions="0.25" fx:id="container" styleClass="container" >
+        <items>
+            <fx:include  source="SideBar.fxml"/>
+            <fx:include source="Main.fxml"/>
+        </items>
+    </SplitPane>
+</VBox>

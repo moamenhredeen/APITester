@@ -16,7 +16,7 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 
-        Parent root = FXMLLoader.load(getClass().getResource("/views/MainView.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/widgets/App.fxml"));
 
         var scene = new Scene(root,1200, 600 );
         stage.setScene(scene);

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.moamen.controllers.HeaderController"
+      fx:id="requestHeader"
+      styleClass="header">
+
+    <TextField HBox.hgrow="ALWAYS" promptText="key"/>
+    <TextField HBox.hgrow="ALWAYS" promptText="value"/>
+    <Button styleClass="btnDeleteHeader" onAction="#removeRequestHeader"/>
+</HBox>

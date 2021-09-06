@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+
+<MenuBar xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml"
+         stylesheets="@../Styles/Styles.css"
+         fx:controller="com.moamen.controllers.MenuBarController">
+    <Menu text="file" >
+        <MenuItem text="save"/>
+        <MenuItem text="save as"/>
+        <MenuItem text="export as"/>
+        <MenuItem text="import"/>
+        <MenuItem text="Quit"/>
+    </Menu>
+
+    <Menu text="View" >
+        <MenuItem text="console"/>
+    </Menu>
+    <Menu text="Help" >
+        <MenuItem text="console"/>
+    </Menu>
+</MenuBar>
