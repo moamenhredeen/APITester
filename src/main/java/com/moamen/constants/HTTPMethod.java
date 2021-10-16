@@ -1,4 +1,4 @@
-package com.moamen.services;
+package com.moamen.constants;
 
 public class HTTPMethod {
     public static final String GET = "GET";

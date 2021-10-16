@@ -1,8 +1,9 @@
 module com.moamen {
-    requires okhttp3;
-    requires javafx.controls;
+
+    requires org.apache.httpcomponents.core5.httpcore5;
     requires javafx.fxml;
+
     exports com.moamen;
-    exports com.moamen.controllers;
-    opens   com.moamen.controllers to javafx.fxml;
+
+    opens com.moamen.controllers to javafx.fxml;
 }

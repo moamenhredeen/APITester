@@ -8,7 +8,7 @@
     <fx:include source="MenuBar.fxml"/>
     <Separator/>
     <fx:include source="ToolBar.fxml"/>
-    <SplitPane VBox.vgrow="ALWAYS" dividerPositions="0.25" fx:id="container" styleClass="container" >
+    <SplitPane VBox.vgrow="ALWAYS" dividerPositions="0.15" fx:id="container" styleClass="container" >
         <items>
             <fx:include  source="SideBar.fxml"/>
             <fx:include source="Main.fxml"/>
