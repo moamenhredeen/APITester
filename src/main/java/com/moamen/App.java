@@ -18,7 +18,7 @@ public class App extends Application {
 
         Parent root = FXMLLoader.load(getClass().getResource("/widgets/App.fxml"));
 
-        var scene = new Scene(root,1200, 600 );
+        var scene = new Scene(root, 1200, 600);
         stage.setScene(scene);
         stage.setTitle("API TESTER");
         stage.show();

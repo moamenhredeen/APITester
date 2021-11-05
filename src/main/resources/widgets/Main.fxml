@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.moamen.CustomCodeArea?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
@@ -35,7 +36,10 @@
                     <HBox styleClass="section-label-container">
                         <Label styleClass="section-label" text="Request Body" HBox.hgrow="ALWAYS"/>
                     </HBox>
-                    <TextArea fx:id="requestBody" promptText="1."/>
+<!--                    <TextArea fx:id="requestBody" promptText="1."/>-->
+<!--                    <MonacoFX fx:id="requestBody"  />-->
+<!--                    <CodeArea fx:id="requestBody"/>-->
+                    <CustomCodeArea/>
                 </VBox>
             </HBox>
         </VBox>
