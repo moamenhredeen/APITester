@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<VBox xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.moamen.controllers.RequestHeadersView">
+    <ToolBar prefHeight="40.0" prefWidth="200.0" styleClass="headers-toolbar">
+        <items>
+            <Button styleClass="headers-toolbar-icon" onAction="#addRequestHeader">
+                <graphic>
+                    <FontIcon iconLiteral="fas-plus"/>
+                </graphic>
+            </Button>
+
+            <Button styleClass="headers-toolbar-icon" onAction="#deleteRequestHeaders">
+                <graphic>
+                    <FontIcon iconLiteral="fas-trash"/>
+                </graphic>
+            </Button>
+        </items>
+    </ToolBar>
+    <VBox fx:id="headers">
+        <children>
+            <HBox styleClass="header">
+                <TextField promptText="key"/>
+                <TextField promptText="value"/>
+                <Button onAction="#removeRequestHeader" styleClass="btnDeleteHeader"/>
+            </HBox>
+        </children>
+    </VBox>
+</VBox>

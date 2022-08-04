@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-
-<VBox  stylesheets="@../Styles/Styles.css"
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.VBox?>
+<VBox stylesheets="@../Styles/Styles.css"
       xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
     <fx:include source="MenuBar.fxml"/>
     <Separator/>
@@ -11,7 +11,10 @@
     <SplitPane VBox.vgrow="ALWAYS" dividerPositions="0.15" fx:id="container" styleClass="container" >
         <items>
             <fx:include  source="SideBar.fxml"/>
-            <fx:include source="Main.fxml"/>
+            <SplitPane dividerPositions="0.3" orientation="VERTICAL" styleClass="main-tab-pane">
+                <fx:include source="HttpRequestView.fxml"/>
+                <fx:include source="HttpResponseView.fxml"/>
+            </SplitPane>
         </items>
     </SplitPane>
 </VBox>
